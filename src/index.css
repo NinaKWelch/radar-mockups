@@ -78,7 +78,7 @@ a {
 
 .dob-match-card {
 	background: rgba(255,255,255,0.8); /* Blue #0099cc */
-	width: 56%;
+	width: 81%;
 	margin: 50px auto;
 	padding: 40px 20px;
 	border: 1px solid white;
@@ -112,7 +112,7 @@ a {
 
 .dob-form-item-1 {
 	margin-top: 1em;
-	width: 50%;
+	width: 100%;
  	line-height: 1.5em;
  	font-size: 0.9em;
 }
@@ -151,3 +151,41 @@ a {
 select {
 	margin: 5px;
 }
+
+/**
+* Media Queries
+*/
+
+@media screen and (min-width: 420px){
+	.dob-match-card {
+		width: 76%;
+	}
+}
+
+@media screen and (min-width: 670px){
+	.dob-match-card {
+		width: 71%;
+	}
+}
+
+@media screen and (min-width: 830px){
+	.dob-match-card {
+		width: 66%;
+	}
+		.dob-form-item-1 {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 970px){
+	.dob-match-card {
+		width: 61%;
+	}
+}
+
+@media screen and (min-width: 1130px){
+	.dob-match-card {
+		width: 56%;
+	}
+}
+

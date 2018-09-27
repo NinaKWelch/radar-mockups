@@ -96,9 +96,9 @@ class App extends Component {
 
               <div className="dob-form-item-2 flex-item">
                 <label className="dob-form-label">Are you:</label>
-                <input name="single" type="radio" checked/> Single
+                <input name="single" type="radio"/> Single
                 <input name="dating" type="radio"/> Dating
-                <input name="inRelatinship" type="radio"/> In relationship
+                <input name="inRelatinship" type="radio" /> In relationship
                 <input name="married" type="radio"/> Married
               </div>
 
