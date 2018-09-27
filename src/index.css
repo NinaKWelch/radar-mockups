@@ -30,6 +30,10 @@ a {
 	text-decoration: none;
 }
 
+fieldset {
+	border: none;
+}
+
 /**
 * Flexbox
 */
@@ -73,10 +77,10 @@ a {
 }
 
 /**
-* DOB
+* Match Card
 */
 
-.dob-match-card {
+.match-card {
 	background: rgba(255,255,255,0.8); /* Blue #0099cc */
 	width: 81%;
 	margin: 50px auto;
@@ -87,69 +91,68 @@ a {
 	text-align: center;
 }
 
-.dob-match-button {
-	background-color: rgba(0,153,204,0.7);
-	color: white;
-	font-size: 1.1em;
-	padding: 10px;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px 0 #ccc;
-}
-
 /**
-* Form
+* Match Card Form
 */
 
-.dob-form {
+.match-form {
 	padding: 20px 15px 0;
 	font-size: 1.1em;
 }
 
-.dob-form input[type=radio]{
+.match-form input[type=radio]{
 	margin: 0 0.2em 0 1em;
 	height: 15px;
 }
 
-.dob-form-item-1 {
+.match-form-person,
+.match-form-partner {
 	margin-top: 1em;
 	width: 100%;
  	line-height: 1.5em;
  	font-size: 0.9em;
 }
 
-.dob-form-item-2 {
+.match-form-relationship-status {
 	margin-top: 1em;
 	width: 100%;
 	line-height: 1.5em;
  	font-size: 0.9em;
 }
 
-.dob-form-title {
+.match-form-title {
  	text-align: center;
  	margin-bottom: 0.7em;
 }
+.match-form-subtitle {
+ 	padding-right: 8px;
+}
 
-.dob-form-section {
+.match-form-section {
 	margin-bottom: 0.8em;
 }
 
-.dob-form-label {
-	padding-right: 10px;
-	display: inline-block;
+.match-form-label {
 }
 
-.dob-form-select {
+.match-form-select {
+	margin: 5px;
 	height: 30px;
 	font-size: 0.9em;
 }
 
-.dob-form-button {
+.match-form-button {
 	width: 100%;
 	margin-top: 30px;
 }
 
-select {
-	margin: 5px;
+.match-from-submit {
+	background-color: rgba(0,153,204,0.7);
+	color: white;
+	font-size: 1.1em;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 0 #ccc;
 }
 
 /**
@@ -172,7 +175,8 @@ select {
 	.dob-match-card {
 		width: 66%;
 	}
-		.dob-form-item-1 {
+	.match-form-person,
+	.match-form-partner {
 		width: 50%;
 	}
 }

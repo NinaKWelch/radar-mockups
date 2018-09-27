@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FB from './FindUs-FB.png';
 
 class App extends Component {
+
   render() {
     return (
       <div className="flex-container">
@@ -16,94 +17,156 @@ class App extends Component {
         </header>
 
         <main className="flex-container">
-          <section className="dob-match-card">
+          <section className="match-card">
             <h2>Check how well you are matched</h2>
 
-            <form className="dob-form flex-container">
-              <div className="dob-form-item-1 flex-item">
-                <h3 className="dob-form-title">You</h3>
+            <form className="match-form flex-container">
+              <div className="match-form-person flex-item">
+                <h3 className="match-form-title">You</h3>
 
-                <div className="dob-form-section">
-                  <label for="gender" className="dob-form-label">Gender:</label>
-                  <input name="youFemale" type="radio" checked/> Woman
-                  <input name="youMale" type="radio"/> Man
-                </div>
+                <fieldset className="match-form-section">
+                  <span className="match-form-subtitle">Gender:</span>
 
-                <div className="dob-form-section">
-                  <label for="dob">Date of birth:</label>
+                  <label className="match-form-label">
+                    <input type="radio"
+                           name="gender-person"
+                           id="gender-person-female"
+                           value="female"
+                    /> Woman
+                  </label>
 
-                  <div>
-                    <select name="day" className="dob-form-select">
-                      <option>Day</option>
-                      <option>01</option>
-                      <option>02</option>
-                      <option>03</option>
-                    </select>
+                  <label className="match-form-label">
+                    <input type="radio"
+                           name="gender-person"
+                           id="gender-person-male"
+                           value="male"
+                    /> Man
+                  </label>
+                </fieldset>
 
-                    <select name="month" className="dob-form-select">
-                      <option>Month</option>
-                      <option>January</option>
-                      <option>February</option>
-                      <option>March</option>
-                    </select>
+                <fieldset className="match-form-section">
+                  <legend>Date of Birth:</legend>
+                  <select name="dob-person-day"
+                          id="dob-person-day"
+                          className="match-form-select"
+                  >
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                  </select>
 
-                    <select name="year" className="dob-form-select">
-                      <option>Year</option>
-                      <option>1950</option>
-                      <option>1952</option>
-                      <option>1953</option>
-                    </select>
-                  </div>
-                </div>
+                  <select name="dob-person-month"
+                          id="dob-person-month"
+                          className="match-form-select"
+                  >
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                  </select>
+
+                  <select name="dob-person-year"
+                          id="dob-person-year"
+                          className="match-form-select"
+                  >
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                  </select>
+                </fieldset>
               </div>
 
-              <div className="dob-form-item-1 flex-item">
-                <h3 className="dob-form-title">Him/Her</h3>
+              <div className="match-form-partner flex-item">
+                <h3 className="match-form-title">Him/Her</h3>
 
-                <div className="dob-form-section">
-                  <label for="gender" className="dob-form-label">Gender:</label>
-                  <input name="heMale" type="radio" checked/> Man
-                  <input name="sheFemale" type="radio"/> Woman
-                </div>
+                <fieldset className="match-form-section">
+                  <span className="match-form-subtitle">Gender:</span>
 
-                <div className="dob-form-section">
-                  <label for="dob">Date of birth:</label>
+                  <label className="match-form-label">
+                    <input type="radio"
+                           name="gender-partner"
+                           id="gender-partner-male"
+                           value="male"
+                    /> Man
+                  </label>
 
-                  <div>
-                    <select name="day" className="dob-form-select">
-                      <option>Day</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                    </select>
+                  <label className="match-form-label">
+                    <input type="radio"
+                           name="gender-partner"
+                           id="gender-partner-female"
+                           value="female"
+                    /> Woman
+                  </label>
+                </fieldset>
 
-                    <select name="month" className="dob-form-select">
-                      <option>Month</option>
-                      <option>January</option>
-                      <option>February</option>
-                      <option>March</option>
-                    </select>
+                <fieldset className="match-form-section">
+                  <legend>Date of Birth:</legend>
+                  <select name="dob-partner-day"
+                          id="dob-partner-day"
+                          className="match-form-select"
+                  >
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                  </select>
 
-                    <select name="year" className="dob-form-select">
-                      <option>Year</option>
-                      <option>1950</option>
-                      <option>1952</option>
-                      <option>1953</option>
-                    </select>
-                  </div>
-                </div>
+                  <select name="dob-partner-month"
+                          id="dob-partner-month"
+                          className="match-form-select"
+                  >
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                  </select>
+
+                  <select name="dob-partner-year"
+                          id="dob-partner-year"
+                          className="match-form-select"
+                  >
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                  </select>
+                </fieldset>
               </div>
 
-              <div className="dob-form-item-2 flex-item">
-                <label className="dob-form-label">Are you:</label>
-                <input name="single" type="radio"/> Single
-                <input name="dating" type="radio"/> Dating
-                <input name="inRelatinship" type="radio" /> In relationship
-                <input name="married" type="radio"/> Married
-              </div>
+              <fieldset className="match-form-relationship-status flex-item">
+                <span className="match-form-subtitle">Are you:</span>
 
-              <div className="dob-form-button flex-item">
-                <input type="submit" value="Match" className="dob-match-button"/>
+                <label className="match-form-label">
+                  <input type="radio"
+                         name="relationship-status"
+                         id="relationship-status-single"
+                         value="single"
+                  /> Single
+                </label>
+
+                <label className="match-form-label">
+                  <input type="radio"
+                         name="relationship-status"
+                         id="relationship-status-dating"
+                         value="dating"
+                  /> Dating
+                </label>
+
+                <label className="match-form-label">
+                  <input type="radio"
+                         name="relationship-status"
+                         id="relationship-status-in-relationship"
+                         value="in-relationship"
+                  /> In Relationship
+                </label>
+
+                <label className="match-form-label">
+                  <input type="radio"
+                         name="relationship-status"
+                         id="relationship-status-married"
+                         value="married"
+                  /> Married
+                </label>
+              </fieldset>
+
+              <div className="match-form-button flex-item">
+                <input type="submit" value="Match" className="match-from-submit"/>
               </div>
 
             </form>
