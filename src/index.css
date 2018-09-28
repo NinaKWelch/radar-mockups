@@ -160,19 +160,19 @@ fieldset {
 */
 
 @media screen and (min-width: 420px){
-	.dob-match-card {
+	.match-card {
 		width: 76%;
 	}
 }
 
 @media screen and (min-width: 670px){
-	.dob-match-card {
+	.match-card {
 		width: 71%;
 	}
 }
 
 @media screen and (min-width: 830px){
-	.dob-match-card {
+	.match-card {
 		width: 66%;
 	}
 	.match-form-person,
@@ -182,14 +182,14 @@ fieldset {
 }
 
 @media screen and (min-width: 970px){
-	.dob-match-card {
+	.match-card {
 		width: 61%;
 	}
 }
 
 @media screen and (min-width: 1130px){
-	.dob-match-card {
-		width: 56%;
+	.match-card {
+		max-width: 700px;
 	}
 }
 
